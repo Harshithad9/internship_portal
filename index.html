@@ -11,63 +11,69 @@
   <h1>Internships</h1>
 
   <div class="internship-container">
-    <!-- Web Development Card -->
-    <div class="internship-card web-dev">
-      <h2 class="internship-title">Web Development Internship Program</h2>
-      <div class="internship-details">
-        <div class="detail-item"><span class="detail-label">Duration:</span> <span>1 month/2 months</span></div>
-        <div class="detail-item"><span class="detail-label">Location:</span> <span>Virtual</span></div>
-        <div class="detail-item"><span class="detail-label">Stipend:</span> <span>-</span></div>
-        <div class="detail-item"><span class="detail-label">Start date:</span> <span>05/11/2023</span></div>
+    <!-- Row 1 -->
+    <div class="internship-row">
+      <!-- Web Development -->
+      <div class="internship-card web-dev">
+        <h2 class="internship-title">Web Development Internship Program</h2>
+        <div class="internship-details">
+          <div class="detail-item"><span class="detail-label">Duration:</span> 1 month/2 months</div>
+          <div class="detail-item"><span class="detail-label">Location:</span> Virtual</div>
+          <div class="detail-item"><span class="detail-label">Stipend:</span> -</div>
+          <div class="detail-item"><span class="detail-label">Start date:</span> 05/11/2023</div>
+        </div>
+        <a href="#" class="view-btn" onclick="toggleDetails(event, 'web-dev')">View Details</a>
+        <div class="more-details" id="web-dev">
+          <p>This internship covers HTML, CSS, JavaScript, and frameworks like React.js. You’ll work on real-world projects and gain a certificate on completion.</p>
+        </div>
       </div>
-      <a href="#" class="view-btn" onclick="toggleDetails(event, 'web-dev-details')">View Details</a>
-      <div class="more-details" id="web-dev-details">
-        <p>This internship covers HTML, CSS, JavaScript, and frameworks like React.js. You’ll work on real-world projects and gain a certificate on completion.</p>
+
+      <!-- App Development -->
+      <div class="internship-card app-dev">
+        <h2 class="internship-title">App Development Internship Program</h2>
+        <div class="internship-details">
+          <div class="detail-item"><span class="detail-label">Duration:</span> 1 month/2 months</div>
+          <div class="detail-item"><span class="detail-label">Location:</span> Virtual</div>
+          <div class="detail-item"><span class="detail-label">Stipend:</span> -</div>
+          <div class="detail-item"><span class="detail-label">Start date:</span> 05/11/2023</div>
+        </div>
+        <a href="#" class="view-btn" onclick="toggleDetails(event, 'app-dev')">View Details</a>
+        <div class="more-details" id="app-dev">
+          <p>This internship teaches mobile development using Flutter or Android Studio. Ideal for those wanting to publish their first app.</p>
+        </div>
       </div>
     </div>
 
-    <!-- App Development Card -->
-    <div class="internship-card app-dev">
-      <h2 class="internship-title">App Development Internship Program</h2>
-      <div class="internship-details">
-        <div class="detail-item"><span class="detail-label">Duration:</span> <span>1 month/2 months</span></div>
-        <div class="detail-item"><span class="detail-label">Location:</span> <span>Virtual</span></div>
-        <div class="detail-item"><span class="detail-label">Stipend:</span> <span>-</span></div>
-        <div class="detail-item"><span class="detail-label">Start date:</span> <span>05/11/2023</span></div>
+    <!-- Row 2 -->
+    <div class="internship-row">
+      <!-- Python Programming -->
+      <div class="internship-card python">
+        <h2 class="internship-title">Python Programming Internship Program</h2>
+        <div class="internship-details">
+          <div class="detail-item"><span class="detail-label">Duration:</span> 1 month/2 months</div>
+          <div class="detail-item"><span class="detail-label">Location:</span> Virtual</div>
+          <div class="detail-item"><span class="detail-label">Stipend:</span> -</div>
+          <div class="detail-item"><span class="detail-label">Start date:</span> 05/11/2023</div>
+        </div>
+        <a href="#" class="view-btn" onclick="toggleDetails(event, 'python')">View Details</a>
+        <div class="more-details" id="python">
+          <p>This internship focuses on core Python, OOPs concepts, and small projects in automation and data processing.</p>
+        </div>
       </div>
-      <a href="#" class="view-btn" onclick="toggleDetails(event, 'app-dev-details')">View Details</a>
-      <div class="more-details" id="app-dev-details">
-        <p>This internship teaches mobile development using Flutter or Android Studio. Ideal for those wanting to publish their first app.</p>
-      </div>
-    </div>
 
-    <!-- Python Programming Card -->
-    <div class="internship-card python">
-      <h2 class="internship-title">Python Programming Internship Program</h2>
-      <div class="internship-details">
-        <div class="detail-item"><span class="detail-label">Duration:</span> <span>1 month/2 months</span></div>
-        <div class="detail-item"><span class="detail-label">Location:</span> <span>Virtual</span></div>
-        <div class="detail-item"><span class="detail-label">Stipend:</span> <span>-</span></div>
-        <div class="detail-item"><span class="detail-label">Start date:</span> <span>05/11/2023</span></div>
-      </div>
-      <a href="#" class="view-btn" onclick="toggleDetails(event, 'python-details')">View Details</a>
-      <div class="more-details" id="python-details">
-        <p>This internship focuses on core Python, OOPs concepts, and small projects in automation and data processing.</p>
-      </div>
-    </div>
-
-    <!-- Java Programming Card -->
-    <div class="internship-card java">
-      <h2 class="internship-title">Java Programming Internship Program</h2>
-      <div class="internship-details">
-        <div class="detail-item"><span class="detail-label">Duration:</span> <span>1 month/2 months</span></div>
-        <div class="detail-item"><span class="detail-label">Location:</span> <span>Virtual</span></div>
-        <div class="detail-item"><span class="detail-label">Stipend:</span> <span>-</span></div>
-        <div class="detail-item"><span class="detail-label">Start date:</span> <span>05/11/2023</span></div>
-      </div>
-      <a href="#" class="view-btn" onclick="toggleDetails(event, 'java-details')">View Details</a>
-      <div class="more-details" id="java-details">
-        <p>This internship provides training in Java fundamentals, OOPs, and basic backend development using Java frameworks.</p>
+      <!-- Java Programming -->
+      <div class="internship-card java">
+        <h2 class="internship-title">Java Programming Internship Program</h2>
+        <div class="internship-details">
+          <div class="detail-item"><span class="detail-label">Duration:</span> 1 month/2 months</div>
+          <div class="detail-item"><span class="detail-label">Location:</span> Virtual</div>
+          <div class="detail-item"><span class="detail-label">Stipend:</span> -</div>
+          <div class="detail-item"><span class="detail-label">Start date:</span> 05/11/2023</div>
+        </div>
+        <a href="#" class="view-btn" onclick="toggleDetails(event, 'java')">View Details</a>
+        <div class="more-details" id="java">
+          <p>This internship provides training in Java fundamentals, OOPs, and basic backend development using Java frameworks.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -75,8 +81,15 @@
   <script>
     function toggleDetails(event, id) {
       event.preventDefault();
-      const detailSection = document.getElementById(id);
-      detailSection.classList.toggle('visible');
+      // Close all open details first
+      document.querySelectorAll('.more-details').forEach(section => {
+        if (section.id !== id) {
+          section.classList.remove('visible');
+        }
+      });
+      // Toggle the selected one
+      const target = document.getElementById(id);
+      target.classList.toggle('visible');
     }
   </script>
 </body>
