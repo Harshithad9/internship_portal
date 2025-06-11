@@ -1,85 +1,77 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #f5f7fa;
-    padding: 40px;
+  background-color: #f5f7fa;
+  padding: 40px;
 }
 
 h1 {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 30px;
-    font-size: 2.5rem;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
 }
 
 .internship-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .internship-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 280px;
-    padding: 25px;
-    transition: transform 0.3s, box-shadow 0.3s;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
 }
 
 .internship-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
-
-.card-icon {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.web-dev .card-icon { color: #3498db; }
-.app-dev .card-icon { color: #9b59b6; }
-.python .card-icon { color: #2ecc71; }
-.java .card-icon { color: #e74c3c; }
 
 .internship-title {
-    font-size: 1.3rem;
-    color: #2c3e50;
-    margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
 }
 
 .internship-details {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .detail-item {
-    display: flex;
-    margin-bottom: 8px;
-    color: #7f8c8d;
+  display: flex;
+  margin-bottom: 8px;
+  color: #7f8c8d;
 }
 
 .detail-label {
-    font-weight: 600;
-    margin-right: 8px;
-    color: #34495e;
+  font-weight: 600;
+  margin-right: 8px;
+  color: #34495e;
 }
 
 .view-btn {
-    display: inline-block;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s;
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  background-color: #3498db;
 }
 
 .web-dev .view-btn { background-color: #3498db; }
@@ -91,3 +83,17 @@ h1 {
 .app-dev .view-btn:hover { background-color: #8e44ad; }
 .python .view-btn:hover { background-color: #27ae60; }
 .java .view-btn:hover { background-color: #c0392b; }
+
+.more-details {
+  display: none;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  color: #2c3e50;
+  font-size: 0.95rem;
+}
+
+.more-details.visible {
+  display: block;
+}
