@@ -26,3 +26,7 @@ This project is a **fully responsive** and **accessible** internship listings we
 | `README.md`  | This project documentation file       |
 
 ---
+
+## 🚀 Live Demo
+
+🔗 [View Live Site](https://internship-portal-brown.vercel.app)
