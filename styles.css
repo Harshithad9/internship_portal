@@ -33,6 +33,7 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 25px;
     transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
 }
 
 .internship-card:hover {
@@ -70,9 +71,30 @@ h1 {
     min-width: 80px;
 }
 
+.extra-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.extra-details h3 {
+    margin-top: 15px;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.extra-details ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #7f8c8d;
+}
+
+.extra-details li {
+    margin-bottom: 5px;
+}
+
 .view-btn {
     display: inline-block;
-    background-color: #3498db;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -81,21 +103,47 @@ h1 {
     transition: background-color 0.3s;
     width: 100%;
     text-align: center;
+    border: none;
+    cursor: pointer;
 }
 
-.web-dev .view-btn { background-color: #3498db; }
-.app-dev .view-btn { background-color: #9b59b6; }
-.python .view-btn { background-color: #2ecc71; }
-.java .view-btn { background-color: #e74c3c; }
-
-.view-btn:hover {
-    background-color: #2980b9;
+.view-details-btn {
+    background-color: #3498db;
+    display: block;
 }
 
-.web-dev .view-btn:hover { background-color: #2980b9; }
-.app-dev .view-btn:hover { background-color: #8e44ad; }
-.python .view-btn:hover { background-color: #27ae60; }
-.java .view-btn:hover { background-color: #c0392b; }
+.hide-details-btn {
+    background-color: #7f8c8d;
+    display: none;
+}
+
+.web-dev .view-details-btn { background-color: #3498db; }
+.app-dev .view-details-btn { background-color: #9b59b6; }
+.python .view-details-btn { background-color: #2ecc71; }
+.java .view-details-btn { background-color: #e74c3c; }
+
+.web-dev .view-details-btn:hover { background-color: #2980b9; }
+.app-dev .view-details-btn:hover { background-color: #8e44ad; }
+.python .view-details-btn:hover { background-color: #27ae60; }
+.java .view-details-btn:hover { background-color: #c0392b; }
+
+.hide-details-btn:hover {
+    background-color: #95a5a6;
+}
+
+/* Target pseudo-class implementation */
+.internship-card:target .extra-details {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+.internship-card:target .view-details-btn {
+    display: none;
+}
+
+.internship-card:target .hide-details-btn {
+    display: block;
+}
 
 @media (max-width: 768px) {
     .internship-container {
