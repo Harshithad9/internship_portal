@@ -37,68 +37,46 @@ h1 {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   width: 280px;
-  padding: 25px;
   transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
 }
 
-.internship-card:hover {
-  transform: translateY(-10px);
+.internship-card[open] {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
 }
 
-.internship-title {
-  font-size: 1.3rem;
-  color: #2c3e50;
-  margin-bottom: 15px;
+.summary-btn {
+  padding: 20px;
+  font-size: 1.2rem;
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px 10px 0 0;
+  list-style: none;
 }
+
+.web-dev .summary-btn { background-color: #3498db; }
+.app-dev .summary-btn { background-color: #9b59b6; }
+.python .summary-btn { background-color: #2ecc71; }
+.java .summary-btn { background-color: #e74c3c; }
 
 .internship-details {
-  margin-bottom: 20px;
-}
-
-.detail-item {
-  margin-bottom: 8px;
-  color: #7f8c8d;
-}
-
-.detail-label {
-  font-weight: 600;
-  margin-right: 8px;
-  color: #34495e;
-}
-
-.view-btn {
-  display: inline-block;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s;
-  background-color: #3498db;
-  cursor: pointer;
-}
-
-.web-dev .view-btn { background-color: #3498db; }
-.app-dev .view-btn { background-color: #9b59b6; }
-.python .view-btn { background-color: #2ecc71; }
-.java .view-btn { background-color: #e74c3c; }
-
-.web-dev .view-btn:hover { background-color: #2980b9; }
-.app-dev .view-btn:hover { background-color: #8e44ad; }
-.python .view-btn:hover { background-color: #27ae60; }
-.java .view-btn:hover { background-color: #c0392b; }
-
-.more-details {
-  display: none;
-  margin-top: 15px;
-  padding: 10px;
-  background-color: #ecf0f1;
-  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
   color: #2c3e50;
   font-size: 0.95rem;
 }
 
-.more-details.visible {
-  display: block;
+.detail-label {
+  font-weight: 600;
+  color: #34495e;
+  display: inline-block;
+  width: 100px;
+}
+
+p {
+  margin-top: 15px;
 }
